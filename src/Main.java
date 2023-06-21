@@ -56,14 +56,14 @@ public class Main {
 
         //exemple clasa Sportiv-Inotator
 
-        Inotator inotator1 = new Inotator();
-        Maratonist maratonist1 = new Maratonist();
+        Inotator inotator1 = new Inotator("Popescu","Ro");
+        Maratonist maratonist1 = new Maratonist("Ionescu","Ro");
         inotator1.seAntreneaza();
         inotator1.seOdihneste();
         maratonist1.seOdihneste();
 
         Animal animal1= new Animal("Rex");
-        Animal animal2= new Animal("Bobita","negru",false);
+        Animal animal2= new Animal("Bobita","neagra",false);
 
         animal1.mananca();
         animal1.doarme();
@@ -74,6 +74,10 @@ public class Main {
         animal2.doarme();
         String afiseazaAnimal2 = animal2.afiseaza();
         System.out.println(afiseazaAnimal2);
+
+
+        Fotbalist fotbalist1= new Fotbalist("Mbape","FR");
+        fotbalist1.seOdihneste();
 
 
 
