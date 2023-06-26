@@ -62,10 +62,15 @@ public class DataStructures {
         System.out.println(listaExamen.values());
         System.out.println(listaExamen.entrySet());
         System.out.println(listaExamen.keySet());
-        for(HashMap.Entry<String,Boolean> entry:listaExamen.entrySet()){
-            if (entry.getValue()){
-                System.out.println("Studentii care trec examenul sunt: "+ entry.getKey());
+        for(HashMap.Entry<String,Boolean> treceExamen:listaExamen.entrySet()){
+            if (treceExamen.getValue()){
+                System.out.println("Studentii care trec examenul sunt: "+ treceExamen.getKey());
             }
+            //for(String student:listaExamen.keySet()){
+                //if(listaExamen.get(student)){
+                    //System.out.println(student);
+                //}
+            //}
         }
 
 
