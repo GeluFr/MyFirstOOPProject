@@ -80,6 +80,11 @@ public class Main {
         fotbalist1.seOdihneste();
 
 
+        Patruped azorel = new Patruped("Azorel",4);
+
+        System.out.println(azorel.getNrPicioare());
+
+
 
 
 

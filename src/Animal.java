@@ -1,4 +1,4 @@
-public class Animal {
+public class Animal implements Vietate {
     protected String nume;
     protected String culoare;
     protected boolean vegetarian;
@@ -55,5 +55,10 @@ public class Animal {
     }
     public String afiseaza(){
         return nume+" are culoarea "+ culoare;
+    }
+
+    @Override
+    public void metodaInterfata() {
+
     }
 }

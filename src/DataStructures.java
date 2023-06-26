@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 public class DataStructures {
     public static void main(String[] args) {
@@ -29,7 +30,45 @@ public class DataStructures {
         System.out.println(hashMapList.values());
         hashMapList.replace(1,"Luni-modificat");
         System.out.println(hashMapList.values());
-        System.out.println(hashMapList.entrySet());
+        System.out.println(hashMapList.entrySet() );
+
+
+
+        //tema 2
+        //partea 1
+
+        ArrayList<String>  listaCursuri = new ArrayList<>();
+        listaCursuri.add("Testare Manuala");
+        listaCursuri.add("Testare Automata");
+        listaCursuri.add("Front-End");
+        listaCursuri.add("Java");
+        System.out.println("Elementul de pe pozitia 2 este: "+listaCursuri.get(1));
+        System.out.println("Lungimea listei este: "+listaCursuri.size());
+        for (String afiseazaCurs:listaCursuri){
+            System.out.println(afiseazaCurs);
+        }
+
+        //partea 2
+
+        String nume;
+        Boolean treceExamenul;
+
+        HashMap<String, Boolean> listaExamen= new HashMap<>();
+        listaExamen.put("Gelu", true);
+        listaExamen.put("Sami",true);
+        listaExamen.put("Catalin", false);
+        listaExamen.put("Marius",false);
+        listaExamen.put("Andreea",true);
+        System.out.println(listaExamen.values());
+        System.out.println(listaExamen.entrySet());
+        System.out.println(listaExamen.keySet());
+        for(HashMap.Entry<String,Boolean> entry:listaExamen.entrySet()){
+            if (entry.getValue()){
+                System.out.println("Studentii care trec examenul sunt: "+ entry.getKey());
+            }
+        }
+
+
 
 
 
